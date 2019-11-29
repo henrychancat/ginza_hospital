@@ -549,17 +549,18 @@ ul.breadcrumb li a:hover {
       font-weight: bold; }
   .qa-content-body {
     padding-top: 32px; }
-
+.contact-section {
+    padding: 20px 0 50px;
+}
 .contact {
-  background-image: url("../../totop_site/images/ba2.jpg");
-  color: #ffffff; }
+  color: #4C4E53; }
   .contact h2 {
     padding-top: 36px;
     text-align: center;
-    color: #ffffff;
+    color: #4C4E53;
     font-size: 2.0rem; }
   .contact p {
-    color: #ffffff;
+    color: #4C4E53;
     text-align: center;
     font-size: 1.4rem;
     padding-top: 16px;
@@ -585,18 +586,12 @@ ul.breadcrumb li a:hover {
         font-size: 0.8rem;
         border-radius: 10px;
         padding: 4px 8px; }
-    .contact-content button {
+    .contact-content .text-banner {
       margin-top: 64px;
-      text-decoration: none;
-      border: 3px solid #ffffff;
-      border-radius: 32px;
-      padding: 8px 80px;
-      background-color: transparent;
-      color: #ffffff;
-      font-size: 1.6rem; }
+    }
     .contact-content-body {
       padding-top: 16px;
-      width: 74%;
+      width: 84%;
       padding-left: 32px; }
     .contact-content input::placeholder, .contact-content textarea::placeholder {
       color: #CCCCCC; }
@@ -604,12 +599,18 @@ ul.breadcrumb li a:hover {
       height: 200px; }
     .contact-content .text-input, .contact-content .textarea-input {
       background-color: rgba(255, 255, 255, 0.1);
-      color: #ffffff;
-      border: 3px solid #ffffff;
-      border-radius: 8px;
-      padding: 8px;
+      color: #4C4E53;
+      border: 1px solid #AFBAC0;
+      padding: 4px;
       width: 100%;
       margin-top: -8px; }
+    .contact-content label {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #4C4E53;
+        border: 1px solid #AFBAC0;
+        padding: 8px 15px;
+        width: 100%;
+        margin-top: -8px; }
     .contact-content-radio {
       display: flex;
       flex-flow: column; }
@@ -639,6 +640,8 @@ ul.breadcrumb li a:hover {
       height: 24px;
       background: #ffffff;
       border-radius: 50%; }
+.checkbox-input { display:none; }
+.checkbox-input:checked ~ label { color:white; background-color: #A3B2B9 }
 
 .fixed_button {
   position: fixed;
