@@ -18,7 +18,7 @@ h4 {
     background-color: rgba(163,178,185,0.2);
 }
 i {
-    border: solid black;
+    /* border: solid black; */
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -31,12 +31,7 @@ i {
     color: #A3B2B9;
     text-decoration: none;
     border-bottom: 1px solid #A3B2B9;
-    padding-bottom: 12px;
-}
-.text-banner:after {
-    padding-left: 16px;
-    color: #A3B2B9;
-    content: ">\00a0";
+    padding-bottom: 7px;
 }
 .text-banner:hover {
     border-bottom: initial;
@@ -189,20 +184,95 @@ header #nav .contact-form-button:after {
     display: none;
 }
 footer {
-  padding: 32px 64px;
+  /* padding: 32px 64px; */
   /*display: flex;*/
   /*flex-flow: row nowrap;*/
   /*justify-content: space-between;*/
   /*align-items: flex-end;*/
   font-size: 0.8rem; }
 footer .logo {
-    float: right;
+    /* float: right; */
 }
-footer .
+footer 
 .logo {
-    width: 200px;
+    width: 270px;
+    object-fit: contain;
     padding: 12px 0;
   z-index: 1000; }
+
+/* footer-contact */
+
+.footer-contact-box{
+  font-family: ten-mincho, serif;
+	font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #A3B2B9;
+}
+
+.contact-box .fas{
+  color: #A3B2B9;
+  margin-right: 10px;
+}
+
+.contact-box .fa-chevron-right{
+  margin: 0;
+  float: right;
+}
+
+.contact-box a{
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  letter-spacing: 2.75px;
+  color:#4C4E53; 
+  margin-bottom: 10px;
+  width: 205px;
+
+}
+
+.footer-under-contents-inner{
+  padding: 20px 0;
+}
+
+.footer-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contact-box .footer-flex{
+  flex-flow: row-reverse;
+}
+
+.contact-button{
+  width: 100%;
+  max-width: 150px;
+  border: 1px solid #A3B2B9;
+}
+
+.contact-button a{
+  font-family: ten-mincho, serif;
+	font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color:#4C4E53;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+.contact-button .fas{
+  float: right;
+}
+
+.sp-float-contents{
+  display: none;
+}
+
+
+
+
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -531,7 +601,9 @@ ul.breadcrumb li a:hover {
     align-items: center;
     border-bottom: #123461 1px solid;
     padding-bottom: 16px; }
-    .qa-content-title-q {
+    .qa-content-title-tel,
+    .qa-content-title-mail,
+    .qa-content-title-top {
       width: 80px;
       height: 80px;
       background-color: #123461;
@@ -542,6 +614,25 @@ ul.breadcrumb li a:hover {
       align-items: center;
       color: #ffffff;
       font-size: 2.4rem; }
+    .qa-content-title-mail,
+    .qa-content-title-tel{
+      background:#707070;
+    }
+    .qa-content-title-top{
+      
+      background: #fff;
+      border: 1px solid #A3B2B9;
+    }
+    .qa-content-title-top a{
+      font-family: ten-mincho, serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 13px;
+      color: #A3B2B9;
+      text-decoration: none;
+      width: 100%;
+
+    }
     .qa-content-title-body {
       width: 80%;
       margin-left: 32px;
@@ -785,6 +876,14 @@ ul.breadcrumb li a:hover {
     margin: 0 20px 0 0;
     width: 50%;
 }
+
+.pc{
+  display: inherit;
+}
+
+.sp{
+  display: none !important;
+}
 @media screen and (max-width: 767px) {
   body {
     padding: 16px 20px;
@@ -909,13 +1008,39 @@ ul.breadcrumb li a:hover {
   }
   footer {
     display: block;
+    margin-bottom: 65px;
   }
   footer .logo {
     margin: 0 auto;
+    padding-bottom: 40px;
   }
   footer p {
     text-align: center;
   }
+
+  .sp-float-contents{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 90%;
+    bottom: 5px;
+    z-index: 999;
+  }
+
+  .footer-contact-box .footer-flex{
+    display: block;
+  }
+
+  .sp-float-contact{
+    display: flex;
+  }
+
+  .contact-box{
+    width: 100%;
+    max-width: 205px;
+    margin: 0 auto;
+  }
+
   .fixed_button {
     display: flex;
     flex-flow: row-reverse nowrap;
@@ -938,6 +1063,14 @@ ul.breadcrumb li a:hover {
     flex-flow: row nowrap;
     align-items: center;
     padding: 8px 20px;
+  }
+
+  .pc{
+    display: none !important;
+  }
+
+  .sp{
+    display: block !important;
   }
 }
 /*# sourceMappingURL=index.css.map */
