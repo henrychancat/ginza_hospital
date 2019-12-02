@@ -1,253 +1,327 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>銀座たるみクリニック</title>
-  <link rel="stylesheet" href="../totop_site/css/reset.css">
-  <link rel="stylesheet" href="../totop_site/css/index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script async src="../totop_site/js/index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>銀座たるみクリニック</title>
+    <link rel="stylesheet" href="../totop_site/css/reset.css">
+    <link rel="stylesheet" href="../totop_site/css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../totop_site/js/jquery.flexslider-min.js"></script>
+    <script async src="../totop_site/js/index.js"></script>
+    <script src="https://use.typekit.net/fya1swr.js"></script>
+    <script>
+        try {
+            Typekit.load({async: true});
+        } catch (e) {
+        }
+    </script>
 </head>
 <body>
 <div class="wrapper">
+    <header>
+        <img src="../totop_site/images/logo.png" alt="logo" class="logo"/>
+        <nav id="nav" class="">
+            <ul class="dropdown">
+                <li class="li-intro"><a href="#" class="dropbtn">医院紹介</a>
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="#" class="sub-menu-link">Link 1</a>
+                        <a href="#" class="sub-menu-link">Link 2</a>
+                        <a href="#" class="sub-menu-link">Link 3</a>
+                    </div>
+                </li>
+                <li><a href="#">院長紹介</a></li>
+                <li><a href="#">診療案内</a></li>
+                <li><a href="#">ブログ</a></li>
+                <li><a href="../totop_site/contact.html" class="contact-form-button">お問い合わせ</a></li>
+            </ul>
 
-  <div class="hero">
-    <img src="../totop_site/images/top.png" alt="top" class="top_pc" />
-    <img src="../totop_site/images/sp/top.png" alt="top" class="top_sp" />
-  </div>
-  <div class="bg-gray">
-    <div class="section about_us" id="about_us">
-      <div class="left">
-        <div class="left-top">
-          <h1><span class="blue">みんなの<br />税理士相談所</span>とは？</h1>
-          <p>About us</p>
+        </nav>
+        <div id="nav-toggle">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <p class="left-bottom">
-          みんなの税理士相談所は相談者様の悩みを的確に解消し、<br />
-          満足いただけるサポートをさせていただいております。<br />
-          「こんなこと頼んでいいのかな？」<br />
-          「今の顧問税理士は少し高いな…」<br />
-          など些細なことでもお気軽にご相談ください。<br />
+        <div id="gloval-nav">
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#">医院紹介？</a></li>
+                    <li><a href="#">院長紹介</a></li>
+                    <li><a href="#">診療案内</a></li>
+                    <li><a href="#">ブログ</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <div class="flexslider pc">
+        <ul class="slides">
+            <li>
+                <img src="../totop_site/images/home.png"/>
+            </li>
+            <li>
+                <img src="../totop_site/images/home.png"/>
+            </li>
+            <li>
+                <img src="../totop_site/images/home.png"/>
+            </li>
+            <li>
+                <img src="../totop_site/images/home.png"/>
+            </li>
+        </ul>
+    </div>
+    <div class="flexslider sp">
+        <ul class="slides">
+            <li>
+                <img src="../totop_site/images/sp/home.png"/>
+            </li>
+            <li>
+                <img src="../totop_site/images/sp/home.png"/>
+            </li>
+            <li>
+                <img src="../totop_site/images/sp/home.png"/>
+            </li>
+            <li>
+                <img src="../totop_site/images/sp/home.png"/>
+            </li>
+        </ul>
+    </div>
+    <div class="home-main-title-container">
+        <p class="home-main-title">
+            キャッチコピーが入ります
         </p>
-      </div>
-      <div class="right">
-        <img src="../totop_site/images/about.jpg" alt="about">
-      </div>
     </div>
-
-    <div class="section points">
-      <div class="point">
-        <h2 class="point-top">Point!<div class="line line-horizontal"></div></h2>
-        <div class="line"></div>
-        <div class="point-content">
-          今すぐ<br />
-          <span class="light-blue">無料</span>でご相談<br />
-          いただけます<br />
-        </div>
-      </div>
-      <div class="point">
-        <h2 class="point-top">Point!<div class="line line-horizontal"></div></h2>
-        <div class="line"></div>
-        <div class="point-content">
-          税務の<br />
-          <span class="light-blue">プロ</span>が<br />
-          紹介します<br />
-        </div>
-      </div>
-      <div class="point">
-        <h2 class="point-top">Point!<div class="line line-horizontal"></div></h2>
-        <div class="line"></div>
-        <div class="point-content">
-          <span class="light-blue">全国</span>の<br />
-          税理士を<br />
-          紹介できます<br />
-        </div>
-      </div>
+    <div class="scroll-text-container">
+        <p class="scroll-text">
+            SCROLL
+        </p>
     </div>
-
-    <div class="section contact_us">
-      <h2 class="contact_us-top">
-        まずはお気軽に<br />
-        お問い合わせください
-      </h2>
-      <a class="contact_us-bottom" href="#contact">
-        今すぐ無料相談
-      </a>
+    <div class="center-line-container">
+        <div class="line"></div>
     </div>
-
-    <div class="section reason">
-      <h2>みんなの税理士相談所が<br />選ばれる理由</h2>
-      <p>Reason</p>
-      <div class="reason-content">
-        <div class="reason-icon-outer">
-          <div class="reason-icon">
-            <div>理由</div>
-            <div class="reason-icon-num">1</div>
+    <div class="doctor-introduction-section home-section sp-none">
+        <div class="doctor-introduction">
+            <div class="home-section-title">
+                <span class="english">DOCTOR</span>
+                <span class="japanese">院長紹介</span>
+            </div>
+            <div class="doctor-introduction-title-container">
+                <p class="doctor-introduction-title">
+                    こちらにリードコピーが入ります
+                </p>
+            </div>
+            <div class="doctor-introduction-text-container">
+                <p class="doctor-introduction-text">
+                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります(250文字程度)
+                </p>
+            </div>
+            <div ><a href="#" class="text-banner">院長紹介はこちら <i class="fas fa-chevron-right"></i></a></div>
+        </div>
+        <div class="doctor-introduction">
+            <div class="doctor-info-image-container">
+                <img src="images/doctor.png">
+                <div class="doctor-info-container">
+                    <p class="doctor-info-clinic">
+                        銀座たるみクリニック
+                    </p>
+                    <p class="doctor-info-post">院長</p>
+                    <p class="doctor-info-name">上野美律</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="doctor-introduction-section home-section sp">
+        <div class="doctor-introduction">
+            <div class="home-section-title">
+                <span class="english">DOCTOR</span>
+                <span class="japanese">院長紹介</span>
+            </div>
+            <div class="doctor-info-image-container">
+                <img src="images/doctor.png">
+                <div class="doctor-info-container">
+                    <p class="doctor-info-clinic">
+                        銀座たるみクリニック
+                    </p>
+                    <p class="doctor-info-post">院長</p>
+                    <p class="doctor-info-name">上野美律</p>
+                </div>
+            </div>
+            <div class="doctor-introduction-title-container">
+                <p class="doctor-introduction-title">
+                    こちらにリードコピーが入ります
+                </p>
+            </div>
+            <div class="doctor-introduction-text-container">
+                <p class="doctor-introduction-text">
+                    テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります(250文字程度)
+                </p>
+            </div>
+            <div ><a href="#" class="text-banner">院長紹介はこちら <i class="fas fa-chevron-right"></i></a></div>
+        </div>
+    </div>
+  <div class="feature-section home-section">
+    <div class="feature-section-title">
+      <span class="japanese">当院の特徴</span>
+      <span class="english">FEATURE</span>
+    </div>
+      <div class="feature-section-content">
+    <div><img src="images/feature1.png"></div>
+      <div class="feature-content-right-container">
+          <p class="feature-section-subtitle">01   <span class="line-horizontal"></span>    FEATURE</p>
+          <p class="feature-title">こちらにリードコピーが入ります</p>
+          <p class="feature-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります(100文字程度)</p>
+      </div>
+      </div>
+      <div class="feature-section-content">
+      <div><img src="images/feature2.png" class="feature-image-right"></div>
+          <div class="feature-content-left-container">
+              <p class="feature-section-subtitle">02   <span class="line-horizontal"></span>    FEATURE</p>
+              <p class="feature-title">こちらにリードコピーが入ります</p>
+              <p class="feature-text">テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります(100文字程度)</p>
           </div>
-        </div>
-        <h3>無料でご相談いただけます</h3>
-        <p>
-          どんな些細な悩みでも、利用回数や紹介人数に制限がなく、手数料など完全無料でご相談いただけます。最短で当日のご紹介が可能となってなっております。
-        </p>
       </div>
-
-      <div class="reason-content">
-        <div class="reason-icon-outer">
-          <div class="reason-icon">
-            <div>理由</div>
-            <div class="reason-icon-num">2</div>
-          </div>
+  </div>
+    <div class="treatment-section home-section">
+        <div class="home-section-title">
+            <span class="english">TREATMENT</span>
+            <span class="japanese">施術案内</span>
         </div>
-        <h3>幅広い分野に対応可能です</h3>
-        <p>
-          税理士事務所、コンサルティングファーム、M&Aアドバイザリーファームに所属していたメンバーで構成されているので通常の税務業務に加え、設立支援からコンサルティング、M&A等幅広く対応可能です。
-        </p>
-      </div>
+        <div class="treatment-container">
+            <div class="treatment-container-segment-left"><img src="images/treatment1.png"></div>
+            <div class="treatment-container-segment">
+                <ul class="treatment-list">
+                <li><a href="#" class="text-banner"><span class="circle"></span>ヒアルロン酸<i class="fas fa-chevron-right"></i></a></li>
+                    <li><a href="#" class="text-banner"><span class="circle"></span>ボツリヌストキシン注入<i class="fas fa-chevron-right"></i></a></li>
+                    <li><a href="#" class="text-banner"><span class="circle"></span>Q-Plus(HIFU)　顔<i class="fas fa-chevron-right"></i></a></li>
+                <li><a href="#" class="text-banner"><span class="circle"></span>Q-Plus(HIFU)　2重顎<i class="fas fa-chevron-right"></i></a></li>
+                <li><a href="#" class="text-banner"><span class="circle"></span>ショッピングスレッド<i class="fas fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="treatment-container-segment-left">
+                <ul class="treatment-list">
+                    <li><a href="#" class="text-banner"><span class="circle"></span>スレッドリフト<i class="fas fa-chevron-right"></i></a></li>
+                    <li><a href="#" class="text-banner"><span class="circle"></span>水光注射<i class="fas fa-chevron-right"></i></a></li>
+                    <li><a href="#" class="text-banner"><span class="circle"></span>ダーマペン<i class="fas fa-chevron-right"></i></a></li>
+                    <li><a href="#" class="text-banner"><span class="circle"></span>マッサージピール<i class="fas fa-chevron-right"></i></a></li>
+                    <li><a href="#" class="text-banner"><span class="circle"></span>BNSL neo(脂肪溶解注射)<i class="fas fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="treatment-container-segment image-right pc"><img src="images/treatment2.png"></div>
+        </div>
     </div>
-  </div>
 
-  <div class="bg-white">
-    <div class="section business" id="business">
-      <h2>税理士に<br />相談できる業務</h2>
-      <p>Business</p>
-      <div class="business-boxes">
-        <div class="box">
-          <img src="../totop_site/images/zigyou.png" alt="zigyou"/>
-          <h2>事業継承・M&A</h2>
-          <p>
-            親族内承継から株式譲渡・事業譲渡など様々なパターンをサポートします
-          </p>
-        </div>
-        <div class="box">
-          <img src="../totop_site/images/komon.png" alt="komon"/>
-          <h2>顧問税理士</h2>
-          <p>顧問契約を結んだ事業者の会計や税務に関わるさまざまなサポートをします</p>
-        </div>
-        <div class="box">
-          <img src="../totop_site/images/kakutei.png" alt="kakutei"/>
-          <h2>確定申告</h2>
-          <p>青色申告・白色申告・贈与税・消費税の申告など様々な税金の確定申告を依頼できます</p>
-        </div>
-        <div class="box">
-          <img src="../totop_site/images/kaisya.png" alt="kaisya"/>
-          <h2>会社設立</h2>
-          <p>会社の種類や設立の流れ・費用・注意点など会社設立の基礎を支援します</p>
-        </div>
-        <div class="box">
-          <img src="../totop_site/images/shikin.png" alt="shikin"/>
-          <h2>資金調達</h2>
-          <p>創業融資や運転資金、補助金・助成金などサポートします</p>
-        </div>
-        <div class="box">
-          <img src="../totop_site/images/keiei.png" alt="keiei"/>
-          <h2>経営コンサル</h2>
-          <p>資金繰り・業績見通し・決算予測など財務関係の指導をします</p>
-        </div>
-        <div class="box">
-          <img src="../totop_site/images/keiri.png" alt="keiri"/>
-          <h2>経理・決算</h2>
-          <p>減価償却・給与計算などのよくあるお悩みを解決します</p>
-        </div>
-        <div class="box">
-          <img src="../totop_site/images/zeimu.png" alt="zeimu"/>
-          <h2>税務調査</h2>
-          <p>納税者が正しく税金を納めているかを確認するための調査です。毎年多くの納税者が追尾課税と呼ばれるペナルティが徴収されるのを防ぎます</p>
-        </div>
-        <div class="box">
-          <img src="../totop_site/images/zinji.png" alt="zinji"/>
-          <h2>人事労務</h2>
-          <p>人事労務のコンサルティングや手続き代行を行います</p>
-        </div>
-      </div>
+    <div class="clinic-image-container">
+        <img src="../totop_site/images/clinic-view-1.png" class="home-image-1" alt="bsan">
+        <img src="../totop_site/images/clinic-view-2.png" class="home-image" alt="bsan">
+        <p class="home-clinic-text">キャッチコピーが入ります</p>
     </div>
-  </div>
-
-
-
-  <div class="bg-white">
-    <div class="section voice" id="voice">
-      <h2>ご利用者様の声</h2>
-      <p>Voice</p>
-      <div class="voice-content">
-        <img src="../totop_site/images/asan.jpg" class="voice-content-img" alt="asan">
-        <img src="../totop_site/images/sp/asan.png" class="voice-content-img-sp" alt="asan">
-        <p class="voice-content-body-right">
-          みんなの税理士相談所を利用してみましたが、とても使いやすいと感じました。まず、「税理士に相談できる業務」ではどのようなことを相談できるのかを見ることができ、自分が利用できる税理士業務を理解することができました。それにより税理士利用の不安を取り除くことができました。そして、「絞り込み」では地域や利用目的で絞ることができ、最適な税理士法人をスムーズに探すことができました。税理士法人を自ら探す面倒な手間が省けたのでとても満足しています。
-        </p>
-      </div>
-      <div class="voice-content">
-        <img src="../totop_site/images/sp/bsan.png" class="voice-content-img-sp" alt="bsan">
-        <p class="voice-content-body-left">
-          確定申告の書類を作成するためみんなの税理士相談所を利用しました。期限までわずかな期間しか残されておらず、できるだけ早く業務を行って欲しいと思っていました。そんな時、本ページを利用することにより素早く税理士法人を検索して詳細な情報まで入手でき、税理士法人を決定することができました。結果的に、確定申告も期限に間に合うことができ、本ページを利用してよかったと心から思っています。
-        </p>
-        <img src="../totop_site/images/bsan.jpg" class="voice-content-img" alt="bsan">
-      </div>
+    <div class="access-section home-section">
+        <div class="home-section-title">
+            <span class="english">CLINIC</span>
+            <span class="japanese">医院紹介</span>
+        </div>
+        <div class="home-section-flex">
+            <table class="time-table">
+                <tbody>
+                <tr class="title-row">
+                    <td class="time-table-content-cell">診療時間</td>
+                    <td class="time-table-content-cell">
+                        <span class="day">月</span>
+                        <span class="day">火</span>
+                        <span class="day">水</span>
+                        <span class="day">木</span>
+                        <span class="day">金</span>
+                        <span class="day">土</span>
+                        <span class="day">日</span>
+                        <span class="day">祝</span>
+                    </td>
+                </tr>
+                <tr class="content-row">
+                    <td class="time-table-content-cell">00:00-00:00</td>
+                    <td class="time-table-content-cell">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </td>
+                </tr>
+                <tr class="content-row">
+                    <td class="time-table-content-cell">00:00-00:00</td>
+                    <td class="time-table-content-cell">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="clinic-info">
+                <p class="clinic-info-title">銀座たるみクリニック</p>
+                <p class="clinic-info-text">〒104-0061 東京都中央区銀座 7-13-1</p>
+                <p class="clinic-info-text">東京メトロ「●●駅」より徒歩●●分</p>
+                <p class="clinic-info-text">休診日: ●曜日/●曜日</p>
+                <p class="clinic-info-text">※診療時間の注意事項が入ります診療時間の注意事項が入ります診療時間の注意事項が入ります診療時間の注意事項が入ります</p>
+                <a href="#" class="text-banner fit-content">医院紹介はこちら<i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
     </div>
-  </div>
-  <div>
-    <img src="../totop_site/images/clinic-view-1.png" class="" alt="bsan">
-    <img src="../totop_site/images/clinic-view-2.png" class="" alt="bsan">
-    <p>キャッチコピーが入ります</p>
-  </div>
-  <div>
-    <div class="home-section-title">
-      <span class="english">CLINIC</span>
-      <span class="japanese">医院紹介</span>
+    <div>
+        <iframe frameborder="0" style="border:0; width: 100%; height: 50vh"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12955.795134271655!2d139.7135962!3d35.7274781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7865dcff68fe5e37!2sB-LINE%20CLINIC!5e0!3m2!1sja!2sjp!4v1574618044417!5m2!1sja!2sjp"
+                allowfullscreen>
+        </iframe>
     </div>
-    <div class="home-section-flex">
-      <table class="time-table">
-        <tbody>
-        <tr class="title-row">
-          <td class="time-table-content-cell">診療時間</td>
-          <td class="time-table-content-cell">月</td>
-          <td class="time-table-content-cell">火</td>
-          <td class="time-table-content-cell">水</td>
-          <td class="time-table-content-cell">木</td>
-          <td class="time-table-content-cell">金</td>
-          <td class="time-table-content-cell">土</td>
-          <td class="time-table-content-cell">日</td>
-          <td class="time-table-content-cell">祝</td>
-        </tr>
-        <tr class="content-row">
-          <td class="time-table-content-cell">00:00-00:00</td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-        </tr>
-        <tr class="content-row">
-          <td class="time-table-content-cell">00:00-00:00</td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-          <td class="time-table-content-cell"><span class="dot"></span></td>
-        </tr>
-        </tbody>
-      </table>
-      <div class="clinic-info">
-        <p>銀座たるみクリニック</p>
-        <p>〒104-0061 東京都中央区銀座 7-13-1</p>
-        <p>東京メトロ「●●駅」より徒歩●●分</p>
-        <p>休診日: ●曜日/●曜日</p>
-        <p>※診療時間の注意事項が入ります診療時間の注意事項が入ります診療時間の注意事項が入ります診療時間の注意事項が入ります</p>
-        <a href="#" class="text-banner">医院紹介はこちら</a>
-      </div>
-    </div>
-  </div>
-  <div>
-    <iframe frameborder="0" style="border:0; width: 100%; height: 50vh" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12955.795134271655!2d139.7135962!3d35.7274781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7865dcff68fe5e37!2sB-LINE%20CLINIC!5e0!3m2!1sja!2sjp!4v1574618044417!5m2!1sja!2sjp"
-            allowfullscreen>
-    </iframe>
-  </div>
+    <footer>
+        <div class="footer-contact-box">
+            <div class="footer-contact-box-inner footer-flex">
+                <img src="../totop_site/images/logo.png" alt="logo" class="logo"/>
+                <div class="contact-box">
+                    <a href="" class="pc"><i class="fas fa-phone"></i>03-1234-5678</a>
+                    <a href="" class="text-banner sp"><i class="fas fa-phone"></i>お電話はこちら<i
+                            class="fas fa-chevron-right"></i></a>
+                    <a href="#contact" class="text-banner"><i class="fas fa-envelope"></i>WEBお問い合わせ<i
+                            class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-under-contents">
+            <div class="footer-under-contents-inner footer-flex">
+                <div class="contact-button">
+                    <div class="contact-button-inner">
+                        <a href="#">SITE MAP <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <p>©︎銀座たるみクリニック</p>
+            </div>
+        </div>
+        <div class="sp-float-contents">
+            <div class="sp-float-contact">
+                <span class="qa-content-title-tel"><i class="fas fa-phone"></i></span>
+                <span class="qa-content-title-mail"><i class="fas fa-envelope"></i></span>
+            </div>
+            <div class="sp-float-too">
+                <div class="qa-content-title-top">
+                    <a href="#">
+                        <p><i class="fas fa-chevron-up" aria-hidden="true"></i><br>
+                            TOP</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>

@@ -19,12 +19,49 @@
 </head>
 <body>
 <div class="wrapper">
+  <header>
+    <img src="../totop_site/images/logo.png" alt="logo" class="logo" />
+    <nav id="nav" class="">
+      <ul class="dropdown">
+        <li class="li-intro"><a href="#" class="dropbtn">医院紹介</a>
+          <div id="dropdown-content" class="dropdown-content">
+            <a href="#" class="sub-menu-link">Link 1</a>
+            <a href="#" class="sub-menu-link">Link 2</a>
+            <a href="#" class="sub-menu-link">Link 3</a>
+          </div></li>
+        <li><a href="#">院長紹介</a></li>
+        <li><a href="#">診療案内</a></li>
+        <li><a href="#">ブログ</a></li>
+        <li><a href="../totop_site/contact.html" class="contact-form-button">お問い合わせ</a></li>
+      </ul>
+
+    </nav>
+    <div id="nav-toggle">
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div id="gloval-nav">
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#">医院紹介？</a></li>
+          <li><a href="#">院長紹介</a></li>
+          <li><a href="#">診療案内</a></li>
+          <li><a href="#">ブログ</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
   <div class="hero">
     <img src="../totop_site/images/top.png" alt="top" class="top_pc" />
     <h2 class="page-title">お問い合わせ</h2>
     <img src="../totop_site/images/sp/top.png" alt="top" class="top_sp" />
   </div>
-  <div class="section">
+  <div class="section breadcrumb-section">
     <ul class="breadcrumb">
       <li><a href="/">TOP</a></li>
       <li>bread</li>
@@ -74,13 +111,48 @@
             </div>
           </div>
           <div class="contact-content">
-            <div type="submit" class="text-banner">送信内容を確定する</div>
+            <div type="submit" class="text-banner">送信内容を確定する<i class="fas fa-chevron-right"></i></div>
           </div>
         </form>
       </div>
     </div>
   </div>
-
+  <footer>
+    <div class="footer-contact-box">
+      <div class="footer-contact-box-inner footer-flex">
+        <img src="../totop_site/images/logo.png" alt="logo" class="logo" />
+        <div class="contact-box">
+          <a href="" class="pc"><i class="fas fa-phone"></i>03-1234-5678</a>
+          <a href="" class="text-banner sp"><i class="fas fa-phone"></i>お電話はこちら<i class="fas fa-chevron-right"></i></a>
+          <a href="#contact" class="text-banner"><i class="fas fa-envelope"></i>WEBお問い合わせ<i class="fas fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-under-contents">
+      <div class="footer-under-contents-inner footer-flex">
+        <div class="contact-button">
+          <div class="contact-button-inner">
+            <a href="#">SITE MAP <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <p>©︎銀座たるみクリニック</p>
+      </div>
+    </div>
+    <div class="sp-float-contents">
+      <div class="sp-float-contact">
+        <span class="qa-content-title-tel"><i class="fas fa-phone"></i></span>
+        <span class="qa-content-title-mail"><i class="fas fa-envelope"></i></span>
+      </div>
+      <div class="sp-float-too">
+        <div class="qa-content-title-top">
+          <a href="#">
+            <p><i class="fas fa-chevron-up" aria-hidden="true"></i><br>
+              TOP</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </div>
 </body>

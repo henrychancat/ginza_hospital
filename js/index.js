@@ -27,7 +27,11 @@ $(document).ready(function(){
       function(){$('#dropdown-content').css('display', 'block')},
       function(){$('#dropdown-content').css('display', 'none')}
   );
-
+  $(window).on("load", function() {
+    $('.flexslider').flexslider({
+      animation: "slide"
+    });
+  });
   // 関数：スムーススクロール
   // 指定したアンカー(#ID)へアニメーションでスクロール
   function scrollToAnker(hash) {
